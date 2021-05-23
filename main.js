@@ -48,7 +48,7 @@ function addStar() {
     scene.add(star);
 }
 
-Array(200).fill().forEach(addStar);
+Array(250).fill().forEach(addStar);
 
 function animate() {
     requestAnimationFrame(animate);
