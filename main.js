@@ -16,12 +16,19 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
 
+// GEOMETRY
 
+// Torus
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({ color: 0xFF6365 });
 const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus);
+// Cube
+const cubeGeo = new THREE.BoxGeometry();
+const cubeMat = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const cube = new THREE.Mesh(cubeGeo, cubeMat);
+
+scene.add(torus, cube);
 
 // Lighting
 const pointLight = new THREE.PointLight(0xffffff);
