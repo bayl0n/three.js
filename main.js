@@ -25,7 +25,7 @@ const torus = new THREE.Mesh(geometry, material);
 
 // Cube
 const cubeGeo = new THREE.BoxGeometry();
-const cubeMat = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const cubeMat = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
 const cube = new THREE.Mesh(cubeGeo, cubeMat);
 
 scene.add(torus, cube);
