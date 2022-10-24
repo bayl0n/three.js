@@ -20,7 +20,7 @@ camera.position.setZ(30);
 
 // Torus
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0xFF6365 });
+const material = new THREE.MeshStandardMaterial({ color: 0x89CFF0});
 const torus = new THREE.Mesh(geometry, material);
 
 // Cube
